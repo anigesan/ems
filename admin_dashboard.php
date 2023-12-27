@@ -30,7 +30,7 @@ if ($_SESSION['role'] == 'admin') {
 <html lang="en">
 
 <head>
-    <title>Admin Dashboard</title>
+    <title>Admin Dashboard wkwkw nyoba</title>
     <!-- Tambahkan link ke Bootstrap CSS -->
     <link rel="stylesheet" href="./CSS/admin-dashboard.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
