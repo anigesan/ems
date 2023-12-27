@@ -1,0 +1,42 @@
+// Variable untuk pemutar YouTube
+var player;
+
+// Fungsi untuk mengekstrak ID video dari URL YouTube
+function extractVideoId(url) {
+    var videoId = '';
+    if (url.indexOf('v=') !== -1) {
+        videoId = url.split('v=')[1];
+    } else if (url.indexOf('youtu.be/') !== -1) {
+        videoId = url.split('youtu.be/')[1];
+    }
+    return videoId;
+}
+
+function startStreaming() {
+    var streamUrl = document.getElementById('streamUrl').value;
+    var videoId = extractVideoId(streamUrl);
+
+    if (videoId) {
+        player = new YT.Player('player', {
+            height: '360',
+            width: '640',
+            videoId: videoId,
+        });
+    }
+}
+
+// Inisialisasi WebSocket
+var chatSocket = new WebSocket('ws://localhost:8080');
+
+chatSocket.onmessage = function (event) {
+    // Menampilkan pesan chat
+    var chatDiv = document.getElementById('chat');
+    chatDiv.innerHTML += event.data + '<br>';
+    chatDiv.scrollTop = chatDiv.scrollHeight; // Auto scroll ke bawah
+};
+
+function sendChatMessage() {
+    var message = 'Admin: ' + document.getElementById('chatInput').value;
+    chatSocket.send(message);
+    document.getElementById('chatInput').value = ''; // Bersihkan input chat
+}

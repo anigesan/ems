@@ -1,0 +1,46 @@
+/* admin-dashboard.css */
+
+.list-group-item {
+    border: 1px solid #f0e3f4; /* Warna tepi */
+    background-color: #fceaff; /* Warna latar */
+    border-radius: 15px; /* Sudut sudut */
+    margin-bottom: 15px;
+    padding: 10px; /* Tambahkan padding agar kontennya tidak terlalu dekat dengan tepi */
+}
+
+.list-group-item h4 {
+    color: #8d3da6; /* Warna teks judul */
+}
+
+.list-group-item p {
+    color: #63417c; /* Warna teks konten */
+}
+
+.list-group-item .btn-group {
+    margin-top: 10px;
+}
+
+.status-aktif {
+    color: #5aa469; /* Warna teks status "Aktif" */
+}
+
+.status-dibatalkan {
+    color: #e95959; /* Warna teks status "Dibatalkan" */
+}
+
+/* Menyesuaikan ukuran tombol agar oval dan konsisten */
+.btn-group .btn {
+    border-radius: 30px; /* Membuat tombol lebih oval */
+    margin-right: 10px;
+    width: 50px; /* Mengatur ukuran tombol agar seragam */
+    background-color: #f3d9eb; /* Warna latar tombol */
+    color: #8d3da6; /* Warna teks tombol */
+    border-color: #f3d9eb; /* Warna tepi tombol */
+    transition: background-color 0.3s, color 0.3s; /* Efek hover transisi */
+}
+
+/* Memberikan efek hover agar tombol terlihat lebih interaktif */
+.btn-group .btn:hover {
+    background-color: #d1aad1; /* Warna latar tombol saat dihover */
+    color: #ffffff; /* Warna teks tombol saat dihover */
+}

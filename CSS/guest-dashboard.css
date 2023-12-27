@@ -1,0 +1,109 @@
+/* guest-dashboard.css */
+
+.list-group-item {
+    border: 1px solid #f0e3f4;
+    background-color: #fceaff;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.list-group-item strong {
+    color: #8d3da6;
+}
+
+.list-group-item p {
+    color: #63417c;
+}
+
+.list-group-item .btn {
+    border-radius: 30px;
+    margin-right: 10px;
+    width: 120px;
+    background-color: #f3d9eb;
+    color: #8d3da6;
+    border-color: #f3d9eb;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.list-group-item .btn:hover {
+    background-color: #d1aad1;
+    color: #ffffff;
+}
+
+.nama-acara {
+    background-color: #FFB6C1;
+    font-size: 25px;
+    font-weight: bold;
+    display: inline;
+}
+
+.status-aktif {
+    color: green;
+}
+
+.status-dibatalkan {
+    color: red;
+}
+
+/* Gaya Umum */
+#botpress-web-chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px; /* Sesuaikan lebar sesuai kebutuhan Anda */
+    height: 500px; /* Sesuaikan tinggi sesuai kebutuhan Anda */
+    border: 1px solid #ddd; /* Warna border */
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* Header Chatbot */
+#botpress-web-chat-header {
+    background-color: #4CAF50; /* Warna latar header */
+    color: #fff; /* Warna teks header */
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Isi Chatbot */
+#botpress-web-chat-content {
+    height: calc(100% - 40px); /* Tinggi konten chatbot */
+    overflow-y: auto;
+}
+
+/* Input dan Tombol Kirim */
+#bp-webchat-user-input {
+    border-top: 1px solid #ddd;
+}
+
+#bp-webchat-input-field {
+    width: calc(100% - 60px); /* Lebar input field */
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+#bp-webchat-send-button {
+    width: 60px;
+    height: 100%;
+    background-color: #4CAF50; /* Warna latar tombol kirim */
+    color: #fff; /* Warna teks tombol kirim */
+    border: none;
+    cursor: pointer;
+}
+
+/* Chat Balloon */
+.bp-message {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Garis pembatas setiap pesan */
+    background-color: #fff; /* Warna latar pesan dari pengguna */
+}
+
+.bp-response {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Garis pembatas setiap pesan */
+    background-color: #f5f5f5; /* Warna latar pesan dari chatbot */
+}
